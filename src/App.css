@@ -9,6 +9,25 @@ body {
   background-color: var(--color-bg);
 }
 
+html, body, #root {
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 110px; /* clears the fixed bottom nav so content isn't hidden behind it */
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
 .logo-box {
   width: 40px;
   height: 40px;
@@ -149,6 +168,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+
+.main-button + .main-button {
+  margin-top: 12px;
 }
 
 /* ===== Divider ("or continue with") ===== */
@@ -531,10 +554,12 @@ body {
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
   height: 91px;
-  background: rgba(217, 217, 217, 0.1);
+  background: rgba(42, 42, 60, 0.95);
   border-top: 1px solid #FFFFFF;
   display: flex;
   justify-content: space-around;
@@ -597,6 +622,7 @@ body {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   padding: 24px;
+  margin-bottom: 32px;
 }
 
 .invoice-summary-top {

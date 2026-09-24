@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --color-bg: #2A2A3C;
+  --color-yellow: #FFBF00;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #FFBF00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box .logo-letter {
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+/* ===== Logo ===== */
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.logo-letter {
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.logo-text {
+  font-family: 'Irish Grover', cursive;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 24px; /* "Golden Crush" line */
+}
+
+/* ===== Headings ===== */
+.login-page h1 {
+  font-family: 'Irish Grover', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-top: 24px;
+}
+
+.login-page p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+/* ===== Input (shared component styling) ===== */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.main-input {
+  width: 100%;
+  height: 52.5px;
+  border-radius: 20px;
+  border: 1px solid #FFBF00;
+  background: transparent;
+  color: #FFFFFF;
+  padding: 0 40px 0 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+}
+
+/* ===== Forgot password link ===== */
+.forgot-link {
+  display: block;
+  text-align: right;
+  color: #FFBF00;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+
+/* ===== Buttons ===== */
+.main-button {
+  width: 100%;
+  height: 52.5px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.main-button.yellow {
+  background: #FFBF00;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0.15em;
+}
+
+.main-button.outline {
+  background: transparent;
+  border: 1px solid #F5F5F5;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ===== Divider ("or continue with") ===== */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.divider hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #FFFFFF;
+}
+
+.divider span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+/* ===== Social login row ===== */
+.social-login {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.social-login .main-button {
+  width: auto;
+  flex: 1;
+}
+
+/* ===== Footer links ===== */
+.signup-link {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.signup-link span {
+  color: #FFBF00;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== Back button ===== */
+.back-button {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+/* ===== Signup-specific heading (bigger than login's) ===== */
+.signup-page h1 {
+  font-family: 'Irish Grover', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.step-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+/* ===== Checkbox row ===== */
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-top: 3px;
+  accent-color: #FFBF00;
+}
+
+.login-link {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.login-link span {
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFBF00;
+  cursor: pointer;
+}
+
+.forgot-password-page h1 {
+  font-family: 'Irish Grover', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.forgot-password-page p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+.key-icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: rgba(139, 62, 62, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* ===== Dashboard header ===== */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  background: rgba(217, 217, 217, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Irish Grover', cursive;
+  font-size: 32px;
+  color: #FFBF00;
+}
+
+.greeting {
+  font-family: 'Irish Grover', cursive;
+  font-size: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.name {
+  font-family: 'Irish Grover', cursive;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.bell-button {
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* ===== Balance card ===== */
+.balance-card {
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid #FFBF00;
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.balance-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.balance-card-tag {
+  background: rgba(255, 191, 0, 0.15);
+  color: #FFBF00;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
+
+.balance-amount {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
+  margin: 12px 0;
+}
+
+.balance-change {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #34A853;
+}
+
+.balance-card hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 16px 0;
+}
+
+.balance-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-card-bottom .label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.balance-card-bottom .value {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin-top: 4px;
+}
+
+.balance-card-bottom .value.premium {
+  color: #FFBF00;
+}
+
+/* ===== Action row (Send/Receive/Invoice/More) ===== */
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.action-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: #FFBF00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.action-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* ===== Recent activity section ===== */
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.section-heading h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.see-all {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFBF00;
+  cursor: pointer;
+}
+
+/* ===== Invoice card (recent activity row) ===== */
+.invoice-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.invoice-card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.invoice-card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.invoice-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.invoice-card-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin-top: 2px;
+}
+
+.invoice-card-amount {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.invoice-card-amount.incoming {
+  color: #34A853;
+}
+
+.invoice-card-amount.outgoing {
+  color: #FFFFFF;
+}
+
+/* ===== Bottom nav ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 91px;
+  background: rgba(217, 217, 217, 0.1);
+  border-top: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item.active {
+  color: #FFBF00;
+}
+
+/* ===== Create Invoice summary box ===== */
+.invoice-summary {
+  border: 1px solid #FFBF00;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.invoice-summary div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.invoice-summary div:last-child {
+  margin-bottom: 0;
+}
+
+.invoice-summary span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.invoice-summary hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 12px 0;
+}
+
+.invoice-summary .total span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/* ===== Invoice Sent summary card ===== */
+.invoice-summary-card {
+  border: 1px solid #FFBF00;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.invoice-summary-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.invoice-summary-top span:first-child {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.invoice-summary-top .invoice-code {
+  color: #FFBF00;
+}
+
+.invoice-code {
+  background: rgba(255, 191, 0, 0.2);
+  color: #FFBF00;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 10px;
+}
+
+.invoice-summary-card h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.usd-label {
+  color: #FFBF00;
+}
+
+.invoice-summary-card hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 16px 0;
+}
+
+.invoice-summary-card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.invoice-summary-card > div:last-child {
+  margin-bottom: 0;
+}
+
+.invoice-summary-card > div span:first-child {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.invoice-summary-card > div span:last-child {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.status-sent {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #98FFB4 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em;
+}
+
+.status-sent::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #98FFB4;
+}

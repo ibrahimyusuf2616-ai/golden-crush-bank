@@ -713,3 +713,13 @@ html, body {
   border-radius: 50%;
   background: #98FFB4;
 }
+
+.page {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 110px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
